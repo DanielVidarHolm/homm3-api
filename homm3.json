@@ -1,0 +1,667 @@
+{
+    "creatures":{
+        "pikeman":{
+            "rName": "Pikeman",
+            "level": 1,
+            "town": "castle",
+            "building": "guardhouse",
+            "upgraded": false,
+            "stats": {
+                "attack": 4,
+                "defence": 5,
+                "minDamage": 1,
+                "maxDamage": 3,
+                "health": 10,
+                "speed": 4,
+                "size": 1
+            },
+            "special": {
+                "immuneToJousting": "PathToAPI"
+            },
+            "movementType": "ground",
+            "growth": 14,
+            "cost": 60,
+            "description": "Pikemen and halberdiers are among the strongest basic foot soldiers available to any army. While somewhat slow, they have respectable combat ratings"
+            
+        },
+        "halberdier":{
+            "rName": "Halberdier",
+            "level": 1,
+            "town": "castle",
+            "building": "guardhouse",
+            "upgraded": true,
+            "stats": {
+                "attack": 6,
+                "defence": 5,
+                "minDamage": 2,
+                "maxDamage": 3,
+                "health": 10,
+                "speed": 5,
+                "size": 1                
+            },
+            "special": {
+                "immuneToJousting": "PathToAPI"
+            },
+            "movementType": "ground",
+            "growth": 14,
+            "cost": 75,
+            "description": "Pikemen and halberdiers are among the strongest basic foot soldiers available to any army. While somewhat slow, they have respectable combat ratings"
+            
+        },
+        "archer":{
+            "rName": "Archer",
+            "level": 2,
+            "town": "castle",
+            "building": "Archer's Tower",
+            "upgraded": false,
+            "stats": {
+                "attack": 6,
+                "defence": 3,
+                "minDamage": 2,
+                "maxDamage": 3,
+                "health": 10,
+                "speed": 4,
+                "size": 1
+            },
+            "special": {
+                "rangedAttack": "PathToAPI"
+            },
+            "movementType": "ground",
+            "growth": 9,
+            "cost": 100,
+            "description": "Archers and marksmen are lightly armored troops armed with crossbows for ranged combat and daggers for light hand-to-hand fighting. Marksmen can get off two shots in each ranged attack."
+            
+        },
+
+        "marksman":{
+            "rName": "Marksman",
+            "level": 2,
+            "town": "castle",
+            "building": "Archer's Tower",
+            "upgraded": true,
+            "stats": {
+                "attack": 6,
+                "defence": 3,
+                "minDamage": 2,
+                "maxDamage": 3,
+                "health": 10,
+                "speed": 6,
+                "size": 1
+            },
+            "special": {
+                "rangedAttack": "PathToAPI",
+                "doubleAttack": "PathToApi"
+            },
+            "movementType": "ground",
+            "growth": 9,
+            "cost": 150,
+            "description": "Archers and marksmen are lightly armored troops armed with crossbows for ranged combat and daggers for light hand-to-hand fighting. Marksmen can get off two shots in each ranged attack."
+            
+        }
+    },
+    "towns":{
+        "castle":{
+            "buildings":{
+                "guardhouse": {
+                    "rName":"Guardhouse",
+                    "path":"/api/buildings/guardhouse"
+                },
+                "upgGuardhouse": {
+                    "rName":"Upgraded Guardhouse",
+                    "path":"/api/buildings/upgGuardhouse"
+                },
+                "archersTower": {
+                    "rName":"Archer's Tower",
+                    "path":"/api/buildings/archersTower"
+                },
+                "upgArchersTower": {
+                    "rName":"Upgraded Archer's Tower",
+                    "path":"/api/buildings/upgArchersTower"
+                },
+                "griffinTower": {
+                    "rName":"Griffin Tower",
+                    "path":"/api/buildings/griffinTower"
+                },
+                "upgGriffinTower": {
+                    "rName":"Upgraded Griffin Tower",
+                    "path":"/api/buildings/upgGriffinTower"
+                },
+                "barracks": {
+                    "rName":"Barracks",
+                    "path":"/api/buildings/barracks"
+                },
+                "upgBarracks": {
+                    "rName":"Upgraded Barracks",
+                    "path":"/api/buildings/upgBarracks"
+                },
+                "monastery": {
+                    "rName":"Monastery",
+                    "path":"/api/buildings/monastery"
+                },
+                "upgMonastery": {
+                    "rName":"Upgraded Monastery",
+                    "path":"/api/buildings/upgMonastery"
+                },
+                "trainingGrounds": {
+                    "rName":"Training Grounds",
+                    "path":"/api/buildings/trainingGrounds"
+                },
+                "upgTrainingGrounds": {
+                    "rName":"Training Grounds",
+                    "path":"/api/buildings/upgTrainingGrounds"
+                },
+                "portalOfGlory": {
+                    "rName":"Portal Of Glory",
+                    "path":"/api/buildings/portalOfGlory"
+                },
+                "upgPortalOfGloryr": {
+                    "rName":"Upgraded Portal Of Glory",
+                    "path":"/api/buildings/upgPortalOfGlory"
+                }
+                
+            },
+            "creatures":{
+                "pikeman": {
+                    "rName":"Pikeman",
+                    "path":"/api/creatures/pikeman"
+                },
+                "halberdier": {
+                    "rName":"Halberdier",
+                    "path":"/api/creatures/halberdier"
+                },
+                "archer": {
+                    "rName":"Archer",
+                    "path":"/api/creatures/archer"
+                },
+                "marksman": {
+                    "rName":"Marksman",
+                    "path":"/api/creatures/marksman"
+                },
+                "griffin": {
+                    "rName":"Griffin",
+                    "path":"/api/creatures/griffin"
+                },
+                "royalGriffin": {
+                    "rName":"Royal Griffin",
+                    "path":"/api/creatures/royalGriffin"
+                },
+                "swordsman": {
+                    "rName":"Swordsman",
+                    "path":"/api/creatures/swordsman"
+                },
+                "crusader": {
+                    "rName":"Crusader",
+                    "path":"/api/creatures/crusader"
+                },
+                "monk": {
+                    "rName":"Monk",
+                    "path":"/api/creatures/monk"
+                },
+                "zealot": {
+                    "rName":"Zealot",
+                    "path":"/api/creatures/zealot"
+                },
+                "cavalier": {
+                    "rName":"Cavalier",
+                    "path":"/api/creatures/cavalier"
+                },
+                "champion": {
+                    "rName":"Champion",
+                    "path":"/api/creatures/champion"
+                },
+                "angel": {
+                    "rName":"Angel",
+                    "path":"/api/creatures/angel"
+                },
+                "archangel": {
+                    "rName":"Archangel",
+                    "path":"/api/creatures/archangel"
+                }
+             
+            }
+        }
+    },
+    "buildings":{
+        "guardhouse": {
+            "rName":"Guardhouse",
+            "cost":{
+                "ore": 10,
+                "gold": 500
+            },
+            "type":"creature dwelling",
+            "creature": {
+                "name": "pikeman",
+                "rName": "Pikeman",
+                "path": "/api/creatures/pikeman"
+            },
+            "town":{
+                "name": "castle",
+                "rName": "Castle",
+                "path": "/api/towns/castle"
+            },
+            "growth": 14,
+            "requirements":[
+                {
+                    "name":"fort",
+                    "rName":"Fort",
+                    "path":"/api/buildings/fort"
+                }
+            ],
+            "upgrade": {
+                "name": "upgGuardhouse",
+                "rName": "Upgraded Guardhouse",
+                "path": "/api/buildings/upgGuardhouse"
+            }
+            
+        },
+        "upgGuardhouse": {
+            "rName":"Upgraded Guardhouse",
+            "cost":{
+                "ore": 5,
+                "gold": 1000
+            },
+            "type":"creature dwelling",
+            "creature": {
+                "name": "halberdier",
+                "rName": "Halberdier",
+                "path": "/api/creatures/halberdier"
+            },
+            "town":{
+                "name": "castle",
+                "rName": "Castle",
+                "path": "/api/towns/castle"
+            },
+            "growth": 14,
+            "requirements":[
+                {
+                    "name":"guardhouse",
+                    "rName":"Guardhouse",
+                    "path":"/api/buildings/guardhouse"
+                }
+            ],
+            "upgrade": false
+            
+        },
+        "archersTower": {
+            "rName":"Archer's Tower",
+            "cost":{
+                "wood": 5,
+                "ore": 5,
+                "gold": 1000
+            },
+            "type":"creature dwelling",
+            "creature": {
+                "name": "archer",
+                "rName": "Archer",
+                "path": "/api/creatures/archer"
+            },
+            "town":{
+                "name": "castle",
+                "rName": "Castle",
+                "path": "/api/towns/castle"
+            },
+            "growth": 9,
+            "requirements":[
+                {
+                    "name":"guardhouse",
+                    "rName":"Guardhouse",
+                    "path":"/api/buildings/guardhouse"
+                }
+            ],
+            "upgrade": {
+                "name": "upgArchersTower",
+                "rName": "Upgraded Archer's Tower",
+                "path": "/api/buildings/upgArchersTower"
+            }
+            
+        },
+        "upgArchersTower": {
+            "rName":"Upgraded Archer's Tower",
+            "cost":{
+                "wood":5,
+                "ore": 5,
+                "gold": 1000
+            },
+            "type":"creature dwelling",
+            "creature": {
+                "name": "marksman",
+                "rName": "Marksman",
+                "path": "/api/creatures/marksman"
+            },
+            "town":{
+                "name": "castle",
+                "rName": "Castle",
+                "path": "/api/towns/castle"
+            },
+            "growth": 9,
+            "requirements":[
+                {
+                    "name":"archersTower",
+                    "rName":"Archer's Tower",
+                    "path":"/api/buildings/archersTower"
+                }
+            ],
+            "upgrade": false
+            
+        },
+        "griffinTower": {
+            "rName":"Griffin Tower",
+            "cost":{
+                "ore": 5,
+                "gold": 1000
+            },
+            "type":"creature dwelling",
+            "creature": {
+                "name": "griffin",
+                "rName": "Griffin",
+                "path": "/api/creatures/griffin"
+            },
+            "town":{
+                "name": "castle",
+                "rName": "Castle",
+                "path": "/api/towns/castle"
+            },
+            "growth": 7,
+            "requirements":[
+                {
+                    "name":"barracks",
+                    "rName":"Barracks",
+                    "path":"/api/buildings/barracks"
+                }
+            ],
+            "upgrade": {
+                "name": "upgGriffinTower",
+                "rName": "Upgraded Griffin Tower",
+                "path": "/api/buildings/upgGriffinTower"
+            }
+            
+        },
+        "upgGriffinTower": {
+            "rName":"Upgraded Griffin Tower",
+            "cost":{
+                "ore": 5,
+                "gold": 1000
+            },
+            "type":"creature dwelling",
+            "creature": {
+                "name": "royalGriffin",
+                "rName": "Royal Griffin",
+                "path": "/api/creatures/royalGriffin"
+            },
+            "town":{
+                "name": "castle",
+                "rName": "Castle",
+                "path": "/api/towns/castle"
+            },
+            "growth": 14,
+            "requirements":[
+                {
+                    "name":"griffinTower",
+                    "rName":"Griffin Tower",
+                    "path":"/api/buildings/griffinTower"
+                }
+            ],
+            "upgrade": false
+            
+        },
+        "barracks": {
+            "rName":"Barracks",
+            "cost":{
+                "ore": 10,
+                "gold": 2000
+            },
+            "type":"creature dwelling",
+            "creature": {
+                "name": "swordsman",
+                "rName": "Swordsman",
+                "path": "/api/creatures/swordsman"
+            },
+            "town":{
+                "name": "castle",
+                "rName": "Castle",
+                "path": "/api/towns/castle"
+            },
+            "growth": 14,
+            "requirements":[
+                {
+                    "name":"guardhouse",
+                    "rName":"Guardhouse",
+                    "path":"/api/buildings/guardhouse"
+                },
+                {
+                    "name":"blacksmith",
+                    "rName":"Blacksmith",
+                    "path":"/api/buildings/blacksmith"
+                }
+            ],
+            "upgrade": {
+                "name": "upgBarracks",
+                "rName": "Upgraded Barracks",
+                "path": "/api/buildings/upgBarracks"
+            }
+            
+        },
+        "upgBarracks": {
+            "rName":"Upgraded Barracks",
+            "cost":{
+                "ore": 5,
+                "crystal":5,
+                "gold": 2000
+            },
+            "type":"creature dwelling",
+            "creature": {
+                "name": "crusader",
+                "rName": "Crusader",
+                "path": "/api/creatures/crusader"
+            },
+            "town":{
+                "name": "castle",
+                "rName": "Castle",
+                "path": "/api/towns/castle"
+            },
+            "growth": 14,
+            "requirements":[
+                {
+                    "name": "barracks",
+                    "rName": "Barracks",
+                    "path": "/api/buildings/barracks"
+                }
+            ],
+            "upgrade": false
+            
+        },
+        "monastery": {
+            "rName":"Guardhouse",
+            "cost":{
+                "ore": 10,
+                "gold": 500
+            },
+            "type":"creature dwelling",
+            "creature": {
+                "name": "pikeman",
+                "rName": "Pikeman",
+                "path": "/api/creatures/pikeman"
+            },
+            "town":{
+                "name": "castle",
+                "rName": "Castle",
+                "path": "/api/towns/castle"
+            },
+            "growth": 14,
+            "requirements":[
+                {
+                    "name":"fort",
+                    "rName":"Fort",
+                    "path":"/api/buildings/fort"
+                }
+            ],
+            "upgrade": {
+                "name": "upgGuardhouse",
+                "rName": "Upgraded Guardhouse",
+                "path": "/api/buildings/upgGuardhouse"
+            }
+            
+        },
+        "upgMonastery": {
+            "rName":"Guardhouse",
+            "cost":{
+                "ore": 10,
+                "gold": 500
+            },
+            "type":"creature dwelling",
+            "creature": {
+                "name": "pikeman",
+                "rName": "Pikeman",
+                "path": "/api/creatures/pikeman"
+            },
+            "town":{
+                "name": "castle",
+                "rName": "Castle",
+                "path": "/api/towns/castle"
+            },
+            "growth": 14,
+            "requirements":[
+                {
+                    "name":"fort",
+                    "rName":"Fort",
+                    "path":"/api/buildings/fort"
+                }
+            ],
+            "upgrade": {
+                "name": "upgGuardhouse",
+                "rName": "Upgraded Guardhouse",
+                "path": "/api/buildings/upgGuardhouse"
+            }
+            
+        },
+        "trainingGrounds": {
+            "rName":"Guardhouse",
+            "cost":{
+                "ore": 10,
+                "gold": 500
+            },
+            "type":"creature dwelling",
+            "creature": {
+                "name": "pikeman",
+                "rName": "Pikeman",
+                "path": "/api/creatures/pikeman"
+            },
+            "town":{
+                "name": "castle",
+                "rName": "Castle",
+                "path": "/api/towns/castle"
+            },
+            "growth": 14,
+            "requirements":[
+                {
+                    "name":"fort",
+                    "rName":"Fort",
+                    "path":"/api/buildings/fort"
+                }
+            ],
+            "upgrade": {
+                "name": "upgGuardhouse",
+                "rName": "Upgraded Guardhouse",
+                "path": "/api/buildings/upgGuardhouse"
+            }
+            
+        },
+        "upgTrainingGrounds": {
+            "rName":"Guardhouse",
+            "cost":{
+                "ore": 10,
+                "gold": 500
+            },
+            "type":"creature dwelling",
+            "creature": {
+                "name": "pikeman",
+                "rName": "Pikeman",
+                "path": "/api/creatures/pikeman"
+            },
+            "town":{
+                "name": "castle",
+                "rName": "Castle",
+                "path": "/api/towns/castle"
+            },
+            "growth": 14,
+            "requirements":[
+                {
+                    "name":"fort",
+                    "rName":"Fort",
+                    "path":"/api/buildings/fort"
+                }
+            ],
+            "upgrade": {
+                "name": "upgGuardhouse",
+                "rName": "Upgraded Guardhouse",
+                "path": "/api/buildings/upgGuardhouse"
+            }
+            
+        },
+        "portalOfGlory": {
+            "rName":"Guardhouse",
+            "cost":{
+                "ore": 10,
+                "gold": 500
+            },
+            "type":"creature dwelling",
+            "creature": {
+                "name": "pikeman",
+                "rName": "Pikeman",
+                "path": "/api/creatures/pikeman"
+            },
+            "town":{
+                "name": "castle",
+                "rName": "Castle",
+                "path": "/api/towns/castle"
+            },
+            "growth": 14,
+            "requirements":[
+                {
+                    "name":"fort",
+                    "rName":"Fort",
+                    "path":"/api/buildings/fort"
+                }
+            ],
+            "upgrade": {
+                "name": "upgGuardhouse",
+                "rName": "Upgraded Guardhouse",
+                "path": "/api/buildings/upgGuardhouse"
+            }
+            
+        },
+        "upgPortalOfGlory": {
+            "rName":"Guardhouse",
+            "cost":{
+                "ore": 10,
+                "gold": 500
+            },
+            "type":"creature dwelling",
+            "creature": {
+                "name": "pikeman",
+                "rName": "Pikeman",
+                "path": "/api/creatures/pikeman"
+            },
+            "town":{
+                "name": "castle",
+                "rName": "Castle",
+                "path": "/api/towns/castle"
+            },
+            "growth": 14,
+            "requirements":[
+                {
+                    "name":"fort",
+                    "rName":"Fort",
+                    "path":"/api/buildings/fort"
+                }
+            ],
+            "upgrade": {
+                "name": "upgGuardhouse",
+                "rName": "Upgraded Guardhouse",
+                "path": "/api/buildings/upgGuardhouse"
+            }
+            
+        }
+    }
+
+}
