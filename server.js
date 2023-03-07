@@ -76,6 +76,6 @@ app.get('/api/:pRoot/:pSubRoot/:pSub2Root/:pSub3Root/:pSub4Root/:pSub5Root', (re
         response.json(homm3JsonFile[pRoot][pSubRoot][pSub2Root][pSub3Root][pSub4Root][pSub5Root])
     }
 })
-app.listen(PORT, ()=>{
+app.listen(process.env.PORT || PORT, ()=>{
     console.log(`Listening on port ${PORT}`)
 })
